@@ -1,0 +1,6 @@
+<!-- boucle pour afficher les images récupérées -->
+<div class="container-fluid">
+  <div *ngFor="let image of images">
+    <img [src]="image.urls.small" [alt]="image.title" />
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<!-- boucle pour afficher les images récupérées -->
+<!-- les afficher dans des cards -->
+<div class="container">
+  <div *ngFor="let image of images">
+    <img [src]="image.urls.small" [alt]="image.title" />
+  </div>
+</div>
